@@ -30,8 +30,6 @@ public class InterrupterComponent : MonoBehaviour
 
     private void OnTriggerEnter(Collider c)
     {
-        //source condition:
-        //https://answers.unity.com/questions/422472/how-can-i-compare-colliders-layer-to-my-layermask.html#answer-1394106
         if (GameTools.CompareLayers(layerMask, c.gameObject.layer))
         {
             isTriggered = true;
