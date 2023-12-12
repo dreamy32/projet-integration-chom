@@ -11,10 +11,5 @@ public class InteractionManager : MonoBehaviour
     public static event InteractAction OnInteract;
     
     //Event
-    // public void Interact(InputAction.CallbackContext ctx)
-    // {
-    //     if (ctx.performed)
-    //         OnInteract?.Invoke();
-    // }
     public static void Interact() => OnInteract?.Invoke();
 }
